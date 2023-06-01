@@ -1,4 +1,4 @@
-package java.test.utils.keycloak;
+package java.test.containers;
 
 import dasniko.testcontainers.keycloak.KeycloakContainer;
 
