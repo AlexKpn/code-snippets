@@ -12,6 +12,7 @@ import org.springframework.http.ResponseEntity;
 import java.test.utils.base.classes.WithRunningServerIntegrationTest;
 
 import java.net.URI;
+import java.test.utils.json.JsonUtils;
 import java.util.stream.Stream;
 
 class ActuatorIntegrationTest extends WithRunningServerIntegrationTest {
