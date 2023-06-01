@@ -1,4 +1,4 @@
-package java.test.utils;
+package java.test.utils.time;
 
 import org.mockito.Mockito;
 
