@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   # Docs: https://www.keycloak.org/server/containers
-  # If you have problems with realm import: https://documentation.cloud-iam.com/en/article/error-creating-xxxxx-javalangruntimeexception-script-upload-is-disabled-lkqprx/
+  # If you have problems with realm import: https://howtodoinjava.com/devops/keycloak-script-upload-is-disabled/
 
   keycloak:
     container_name: keycloak
