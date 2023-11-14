@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+
+  liquibase:
+    container_name: liquibase
+    image: liquibase/liquibase:latest-alpine
+    command: [ "liquibase", "update" ]
+    environment: #Env variables: https://docs.liquibase.com/parameters/home.html
+      - LIQUIBASE_COMMAND_URL= #jdbc url
+      - LIQUIBASE_SEARCH_PATH=/liquibase/changelog
+      - LIQUIBASE_COMMAND_CHANGELOG_FILE=db.changelog-master.xml
+    volumes:
+      - ./changelog:/liquibase/changelog
+    networks:
+      - n1
