@@ -14,6 +14,7 @@ services:
     environment:
       - KEYCLOAK_ADMIN=admin
       - KEYCLOAK_ADMIN_PASSWORD=admin
+    #      - KC_FEATURES=token-exchange,admin-fine-grained-authz
     ports:
       - "8081:8080"
 
